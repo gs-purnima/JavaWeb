@@ -12,7 +12,7 @@ phases:
   post_build:
     commands:
       - docker push 474011752432.dkr.ecr.us-east-1.amazonaws.com/java:latest
-      - printf '[{"name":"Sample","imageUri":"%s"}]' 474011752432.dkr.ecr.us-east-1.amazonaws.com/java:latest > imagedefinitions.json
+      - printf '[{"name":"java","imageUri":"%s"}]' 474011752432.dkr.ecr.us-east-1.amazonaws.com/java:latest > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
