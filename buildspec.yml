@@ -18,7 +18,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - docker push 474011752432.dkr.ecr.us-east-1.amazonaws.com/java:latest
-      - printf '[{"name":"ECS","imageUri":"%s"}]' 474011752432.dkr.ecr.us-east-1.amazonaws.com/java:latest > imagedefinitions.json
+      - printf '[{"name":"Sample_SVC","imageUri":"%s"}]' 474011752432.dkr.ecr.us-east-1.amazonaws.com/java:latest > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
