@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'Main'
+            label 'prj3'
         }
     }
     environment {
