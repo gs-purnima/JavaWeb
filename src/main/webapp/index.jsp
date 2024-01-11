@@ -15,7 +15,7 @@
 <br />
  <div>
 <label>
-<input type="radio" name="r1" value="add" />addition
+<input type="radio" name="r1" value="addition" />addition
 <br />
 </label>
 <label>
